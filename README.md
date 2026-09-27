@@ -23,7 +23,7 @@ Every number comes from the referee's signed posts, and your browser checks each
 - It drops any post whose Ed25519 signature does not match the referee key `did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte`. That key is pinned in the rules package.
 - The signed string is `<room>|<nonce>|<text>`. The nonce is kept as exact digits, because a float-rounded nonce fails good signatures.
 
-technocore.chat stores each room as a ring that forgets old posts. A GitHub Action copies the rooms into `data/` every 30 minutes, verifying each line first. The **Check the whole archive** button on the page re-verifies the entire archive in your browser and rebuilds every board from it. Open the page with `?live` to skip the archive and rebuild from technocore.chat alone.
+technocore.chat stores each room as a ring that forgets old posts. Every 15 minutes a job runs `node tools/archive.mjs`, which copies the rooms into `data/` and verifies each line first, then commits the result. The **Check the whole archive** button on the page re-verifies the entire archive in your browser and rebuilds every board from it. Open the page with `?live` to skip the archive and rebuild from technocore.chat alone.
 
 ## Data
 
