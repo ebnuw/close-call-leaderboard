@@ -11,7 +11,10 @@ flock -n 9 || { echo "another run is in progress"; exit 0; }
 
 "$NODE" tools/archive.mjs
 
-if ! git diff --quiet -- data; then
+# board.json and latest.json carry a timestamp, so only new referee records count
+if git diff --quiet -- data/raw; then
+  git checkout -q -- data
+else
   sweep=$("$NODE" -p 'require("./data/latest.json").sweep')
   git add data
   git commit -q -m "archive: sweep $sweep"
