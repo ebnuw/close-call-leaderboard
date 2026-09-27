@@ -121,7 +121,8 @@ async function applyMessages(key, d) {
   }
   if (d.generation !== undefined) S.board.gen[key] = d.generation;
   const room = CONTEST.rooms[key];
-  const msgs = d.messages.filter((m) => m.seq > (S.board.seq[key] || 0)).sort((a, b) => a.seq - b.seq);
+  // >= keeps the record the page already holds, so it gets verified again
+  const msgs = d.messages.filter((m) => m.seq >= (S.board.seq[key] || 0)).sort((a, b) => a.seq - b.seq);
   let changed = false;
   for (const m of msgs) {
     const ok = await verifyRecord(room, m);
@@ -139,10 +140,13 @@ async function applyMessages(key, d) {
 // Catch one room up. A short read covers the usual case; if the page is further
 // behind than one read can reach (no archive, or an old one), take the room's
 // whole ring instead, because `since` + `limit` returns the NEWEST records.
+// The read starts one record back, so the post the page already shows is
+// checked against the referee's key in this browser too, even if it came
+// from the archive.
 async function catchUp(key, limit) {
-  const since = S.board.seq[key] || 0;
-  const d = await readRoom(key, since, limit);
-  const gap = since ? d.first_seq > since + 1 : d.first_seq > 1;
+  const held = S.board.seq[key] || 0;
+  const d = await readRoom(key, Math.max(0, held - 1), limit);
+  const gap = held ? d.first_seq > held : d.first_seq > 1;
   if (gap && key !== "flow") {
     try {
       return await applyMessages(key, await exportRoom(key));
@@ -262,7 +266,7 @@ function renderStatus() {
   let sig;
   if (S.sig.bad) sig = `<span class="sig bad" title="Posts that failed the referee signature check were dropped">${S.sig.bad} bad signature${S.sig.bad > 1 ? "s" : ""} dropped</span>`;
   else if (S.sig.unsupported) sig = `<span class="sig warn" title="This browser has no Ed25519 in WebCrypto">signatures not checked here</span>`;
-  else if (S.sig.ok) sig = `<span class="sig ok" title="Every post read live was checked against the referee's key in this browser">✓ referee-signed</span>`;
+  else if (S.sig.ok) sig = `<span class="sig ok" title="The latest referee posts were checked against the referee's key in this browser">✓ referee-signed</span>`;
   else sig = `<span class="sig" title="Loaded from this site's archive; the live tail is checked as it arrives">archive</span>`;
   const tail = locked || v.final ? "" : ` · next ${next > 0 ? "in " + F.clock(next) : "any second"}`;
   el.className = `status ${cls}`;
