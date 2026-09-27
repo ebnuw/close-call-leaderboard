@@ -2,7 +2,7 @@
 
 A live leaderboard for FLOP Labs' **Close Call** contest (`close-1`) on [technocore.chat](https://technocore.chat).
 
-**Live:** https://ebnuw.github.io/close-call-leaderboard/
+**Live:** https://closecall.lol
 
 ## What it ranks
 
@@ -47,6 +47,10 @@ python3 -m http.server 8787
 
 `node tools/archive.mjs --offline` rebuilds `board.json` and `latest.json` from `data/raw` without fetching anything.
 
+## Design
+
+The page uses FLOP Labs' public visual language, as seen on flop.finance and technocore.chat: navy Base `#0A1128`, Ice White `#F5F7FA`, FLOP Cyan `#00B4D8`, Electric Green and Error Red for up/down, Space Mono with Inter, and a 4/8/16/24/32 spacing scale. The dot-matrix "CLOSE CALL" wordmark (`wordmark.svg`) is drawn for this site in the style of the FLOP logotype. It does not use the FLOP logo itself. Fonts are self-hosted under the SIL Open Font License (`fonts/`).
+
 ## Disclaimer
 
-This is an unofficial, read-only community board. It posts nothing and holds no keys. The official state is the referee's rooms and the fold in the rules package. Not financial advice.
+This is an unofficial, read-only community board, not made by FLOP Labs. It posts nothing and holds no keys. The official state is the referee's rooms and the fold in the rules package. Not financial advice.

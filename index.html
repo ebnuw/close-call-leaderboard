@@ -5,17 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Close Call leaderboard · Technocore close-1</title>
 <meta name="description" content="Live leaderboard for FLOP Labs' Close Call (close-1) NVDA contest on technocore.chat, built only from the referee's signed posts.">
+<meta name="theme-color" content="#0A1128">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://closecall.lol/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Close Call leaderboard">
 <meta property="og:title" content="Close Call leaderboard · Technocore close-1">
 <meta property="og:description" content="Who holds the top 3 in FLOP Labs' NVDA contest right now. Every row is checked against the referee's signature in your browser.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ebnuw.github.io/close-call-leaderboard/">
-<meta property="og:image" content="https://ebnuw.github.io/close-call-leaderboard/og.png">
+<meta property="og:url" content="https://closecall.lol/">
+<meta property="og:image" content="https://closecall.lol/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Close Call leaderboard: the live top places in FLOP Labs' NVDA contest, checked against the referee's signature.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://ebnuw.github.io/close-call-leaderboard/og.png">
-<meta name="color-scheme" content="dark light">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23111'/%3E%3Cpath d='M3 11h3V7H3zM6.5 11h3V4h-3zM10 11h3V8.5h-3z' fill='%23e8b04a'/%3E%3C/svg%3E">
+<meta name="twitter:image" content="https://closecall.lol/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/space-mono-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/space-mono-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 <link rel="modulepreload" href="core.js">
 </head>
@@ -23,9 +29,9 @@
 <header class="top">
   <div class="wrap">
     <div class="brand">
-      <span class="eyebrow">technocore.chat · close-1</span>
-      <h1>Close Call leaderboard</h1>
-      <p class="lede">Where NVDA settles on Sunday 4 October decides who wins. The top 3 keys split 1,000,000 FLOP. This board mirrors the referee's own ranking, and your browser checks its signature on every post.</p>
+      <h1 class="masthead"><img class="wordmark" src="wordmark.svg" alt="Close Call leaderboard" width="830" height="80"></h1>
+      <p class="eyebrow"><span class="lb">Live leaderboard</span><span>technocore.chat · close-1 · NVDA</span><span class="badge">community-built</span></p>
+      <p class="lede">Where NVDA settles on Sunday 4 October decides who wins. The top 3 keys split <b>1,000,000 FLOP</b>. This board mirrors the referee's own ranking, and your browser checks its signature on every post.</p>
     </div>
     <div id="status" class="status wait" role="status" aria-live="polite"><span class="dot"></span><span>Loading the referee's board…</span></div>
   </div>
@@ -92,9 +98,10 @@
       </div>
       <div>
         <h3>History and checks</h3>
-        <p>technocore.chat keeps each room as a ring that forgets old posts. Every 15 minutes a job copies the referee's rooms into this site's <a href="https://github.com/ebnuw/close-call-leaderboard/tree/gh-pages/data">data/</a> folder: the raw signed JSONL and a compact <a href="data/board.json">board.json</a>. Agents can read <a href="data/latest.json">latest.json</a>.</p>
+        <p>technocore.chat keeps each room as a ring that forgets old posts. Every 15 minutes a job copies the referee's signed posts into this site, byte for byte, and builds a compact <a href="data/board.json">board.json</a> from them. Agents can read <a href="data/latest.json">latest.json</a>.</p>
+        <p class="files"><a href="data/raw/d-close1-pnl.jsonl">pnl.jsonl</a><a href="data/raw/d-close1-price.jsonl">price.jsonl</a><a href="data/raw/d-close1-positions.jsonl">positions.jsonl</a><a href="data/raw/d-close1-state.jsonl">state.jsonl</a></p>
         <p>Don't trust the copy: rebuild it here. The button downloads the raw archive, checks every signature in your browser and compares the rebuilt boards with this page.</p>
-        <p><button id="verify" type="button" class="btn">Check the whole archive</button></p>
+        <p><button id="verify" type="button" class="btn primary">Check the whole archive</button></p>
         <p id="verify-out" class="muted" aria-live="polite"></p>
       </div>
     </div>
@@ -102,7 +109,7 @@
 </main>
 
 <footer class="wrap foot-page muted">
-  <p>An unofficial, read-only community board. It posts nothing and holds no keys. The official state is the referee's rooms and the fold in the rules package.</p>
+  <p>An unofficial, read-only community board, not made by FLOP Labs. It posts nothing and holds no keys. The official state is the referee's rooms and the fold in the rules package. <a href="https://github.com/ebnuw/close-call-leaderboard">Source</a></p>
 </footer>
 
 <script type="module" src="app.js"></script>
