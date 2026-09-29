@@ -13,17 +13,17 @@
   "manifest_sha256": "bae09812e25eb6f1369c611f24964f7ea0acafddfc45301a16f33f941296dafa",
   "note": "Scores and ranks are the referee's signed d-close1-pnl board (top 25, marked at the global price). position_est is inferred by this site, not published by the referee."
  },
- "generated": "2026-09-29T22:17:39.421Z",
- "sweep": 1275,
- "sweep_time": "2026-09-29T22:15:00.000Z",
- "posted": "2026-09-29T22:16:05.516557Z",
+ "generated": "2026-09-29T22:32:02.207Z",
+ "sweep": 1278,
+ "sweep_time": "2026-09-29T22:30:00.000Z",
+ "posted": "2026-09-29T22:31:05.456680Z",
  "lock_sweep": 2556,
- "mark": 229.38,
- "reference": 228.09,
- "owners": 9458801,
- "longs": 1384649,
- "shorts": 1421361,
- "open_interest": 51090853.97,
+ "mark": 228.98,
+ "reference": 228.17,
+ "owners": 9487436,
+ "longs": 1392266,
+ "shorts": 1428810,
+ "open_interest": 51351505.78,
  "final": null,
  "podium": [
   {
@@ -31,7 +31,7 @@
     1,
     2
    ],
-   "score": 1087.34,
+   "score": 1068.44,
    "keys": 2,
    "more_tied_beyond_board": false
   },
@@ -39,7 +39,7 @@
    "places": [
     3
    ],
-   "score": 1085.61,
+   "score": 1066.71,
    "keys": 1,
    "more_tied_beyond_board": false
   }
@@ -48,13 +48,13 @@
   {
    "rank": 1,
    "did": "did:key:z6MksPKMgp8PMQsUktYs2EKQhMG8Wsqt5tsZB6iVEVDRVcQo",
-   "score": 1087.34,
+   "score": 1068.44,
    "tied": true,
    "prize_places": [
     1,
     2
    ],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.12,
    "position_exact": true
@@ -62,13 +62,13 @@
   {
    "rank": 1,
    "did": "did:key:z6MksQCRUshPKbpkDC1g39KrPrBUCXrD5MY4sihwDmrMGrq1",
-   "score": 1087.34,
+   "score": 1068.44,
    "tied": true,
    "prize_places": [
     1,
     2
    ],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.12,
    "position_exact": true
@@ -76,12 +76,12 @@
   {
    "rank": 3,
    "did": "did:key:z6MksTEGCUCfsQncGLne6wFhf4hto4ZuJozbJ9PL4rSuHC3n",
-   "score": 1085.61,
+   "score": 1066.71,
    "tied": false,
    "prize_places": [
     3
    ],
-   "delta_last_sweep": -5.18,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -89,10 +89,10 @@
   {
    "rank": 4,
    "did": "did:key:z6MksQDNifiEnb6iJyRr7GXCVGdYYQeeJ38r4m3TofTJfqN2",
-   "score": 1085.46,
+   "score": 1066.56,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -100,10 +100,10 @@
   {
    "rank": 4,
    "did": "did:key:z6MksQmqab6hUpSMkwuXg9k95LA3ZrB2awRE3XJHhfAf7Adr",
-   "score": 1085.46,
+   "score": 1066.56,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -111,10 +111,10 @@
   {
    "rank": 4,
    "did": "did:key:z6MksRfYmLAfU7ALq7uKnA93kid3YLGjZBAMGLMgyepbAWMK",
-   "score": 1085.46,
+   "score": 1066.56,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -122,10 +122,10 @@
   {
    "rank": 4,
    "did": "did:key:z6MksSQPE6ZaeVRqtzBDLQYi78PqFLBiXk2AZ78hXBwYhW2Y",
-   "score": 1085.46,
+   "score": 1066.56,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -133,10 +133,10 @@
   {
    "rank": 4,
    "did": "did:key:z6MksSsc4ny8HFWD6Jh2PpKdLGZngUsica7bdnbP5xvAsj4m",
-   "score": 1085.46,
+   "score": 1066.56,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -144,10 +144,10 @@
   {
    "rank": 4,
    "did": "did:key:z6MksT96nB2cMDpKbqTqdtRXoL1NnMiP3CFT2pgyKcbR5bn2",
-   "score": 1085.46,
+   "score": 1066.56,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.19,
+   "delta_last_sweep": -13.03,
    "in_board_since_sweep": 1263,
    "position_est": 47.11,
    "position_exact": true
@@ -155,177 +155,177 @@
   {
    "rank": 10,
    "did": "did:key:z6MksRmNuJyYRAC8ssQZaQ8mcRXvZ4MpPj3Tr24ucuhfkVAW",
-   "score": 1058.28,
+   "score": 1039.42,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -13,
    "in_board_since_sweep": 1263,
-   "position_est": 47.91,
+   "position_est": 47.65,
    "position_exact": false
   },
   {
    "rank": 10,
    "did": "did:key:z6MksTC6PvCGrdLBq7DVBCv2FVZfjDec2B3HN5EJwWP3RCBD",
-   "score": 1058.28,
+   "score": 1039.42,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -13,
    "in_board_since_sweep": 1263,
-   "position_est": 47.91,
+   "position_est": 47.65,
    "position_exact": false
   },
   {
    "rank": 12,
    "did": "did:key:z6MksQBTMxDSDddGBRptahQ7spZp45W4AGj5v4shNWxNbyr5",
-   "score": 1044.16,
+   "score": 1025.33,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -12.99,
    "in_board_since_sweep": 1263,
-   "position_est": 47.84,
+   "position_est": 47.58,
    "position_exact": false
   },
   {
    "rank": 12,
    "did": "did:key:z6MksRAAUio5Q8LgB4Lv7BvUYBTDtZZP61vCWtRREqhAdtkh",
-   "score": 1044.16,
+   "score": 1025.33,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -12.99,
    "in_board_since_sweep": 1263,
-   "position_est": 47.84,
+   "position_est": 47.58,
    "position_exact": false
   },
   {
    "rank": 12,
    "did": "did:key:z6MksSFwSXNVuAm8ebBiLkh5GWxns27cDRKwG3iTbsQQZuP2",
-   "score": 1044.16,
+   "score": 1025.33,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -12.99,
    "in_board_since_sweep": 1263,
-   "position_est": 47.84,
+   "position_est": 47.58,
    "position_exact": false
   },
   {
    "rank": 12,
    "did": "did:key:z6MksSVWejuGNK6q2KDdB1f5UeLWbNzQ1A8eBg7kt3VKbdyr",
-   "score": 1044.16,
+   "score": 1025.33,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -12.99,
    "in_board_since_sweep": 1263,
-   "position_est": 47.84,
+   "position_est": 47.58,
    "position_exact": false
   },
   {
    "rank": 12,
    "did": "did:key:z6MksSgFNkwhKCf1e2asQzpkszVerqWjJbgvQe8cXFPkvbvk",
-   "score": 1044.16,
+   "score": 1025.33,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": -5.17,
+   "delta_last_sweep": -12.99,
    "in_board_since_sweep": 1263,
-   "position_est": 47.84,
+   "position_est": 47.58,
    "position_exact": false
   },
   {
    "rank": 17,
    "did": "did:key:z6MksNKShFHH5HFYzuCciBAyzGpEgS23pcDhKK2yTRYUUaoE",
-   "score": 992.69,
+   "score": 1010.68,
    "tied": false,
    "prize_places": [],
-   "delta_last_sweep": 4.93,
+   "delta_last_sweep": 12.4,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksLWRr8Uc3PkSssSWvoa6U9mzkkLDu67oPj3a69YjPe1W",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksLc8G3py8cb1pxhEmLYiAbZnikyLxEikAS8oxMdH4R2V",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksLnMAwSkJ5EkiTKJsYGpvM6zXUYtFXmmgCo2NeVNbVnU",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksM6RUoQb8TPeSnGiumiGsvqWzMSaTq6BYEpUszcWnfre",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksMRmpvBM3gLjZzrpXZuZVoi3Sg6mUZpbc4sgSLnLNjUX",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksN9eVkstgp9Six7PXvATX7SyiAhEHDHuePqVYgmbiAbK",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksNANLiVTsqjC3BJ95Q8UY1SqLpGc6xPN8d9mPfTMQSDf",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1209,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   },
   {
    "rank": 18,
    "did": "did:key:z6MksNM2Hjqkzu6tgQxxog6uuhm2tRpAYkpbkGjT7Qg7s8xi",
-   "score": 992.61,
+   "score": 1010.6,
    "tied": true,
    "prize_places": [],
-   "delta_last_sweep": 4.94,
+   "delta_last_sweep": 12.41,
    "in_board_since_sweep": 1210,
-   "position_est": -44.87,
+   "position_est": -44.86,
    "position_exact": false
   }
  ]
